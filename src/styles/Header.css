@@ -1,0 +1,25 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 65px;
+  padding-block: 25px;
+  user-select: none;
+  width: 100vw;
+  top: 0px;
+  position: fixed;
+  z-index: 50;
+  background-color: black;
+
+  .header-element {
+    font-weight: bold;
+    transition: all 0.1s ease;
+    padding: 5px;
+    cursor: progress;
+
+    &:hover {
+      color: var(--primary-color);
+      transform: scale(1.2);
+    }
+  }
+}

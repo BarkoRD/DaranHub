@@ -1,0 +1,20 @@
+.aboutus-container {
+  padding-inline: 65px;
+  width: 100vw;
+  height: 100vh;
+  padding-block: 15px;
+  font-size: 25px;
+}
+
+.fade-inabout {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 1s ease-out,
+    transform 1s ease-out;
+}
+
+.fade-inabout.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

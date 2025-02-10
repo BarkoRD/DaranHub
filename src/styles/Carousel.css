@@ -1,0 +1,76 @@
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  height: 4rem;
+  border-color: #4b5563;
+  width: 100%;
+
+  view-timeline-name: --revealing-image;
+  view-timeline-axis: block;
+  animation: linear reveal both;
+  animation-timeline: --revealing-image;
+  animation-range: entry 25% cover 50%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 1;
+  }
+
+  &::before {
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      black
+    );
+    left: 0;
+  }
+
+  &::after {
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      black
+    );
+    right: 0;
+  }
+
+  .carousel-track {
+    display: flex;
+    position: absolute;
+    left: 0;
+    justify-content: start;
+    align-items: center;
+    height: 80px;
+    gap: 80px;
+    width: calc(30 * 64px + 29 * 80px);
+    height: 100%;
+    animation: slide 20s linear infinite;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(-4240px/2);
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}

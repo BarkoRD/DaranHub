@@ -1,0 +1,61 @@
+/*  <>
+      <Header />
+      <section className="mainlandin-section">
+        <div className="landingtexts">
+          <div className="welcomemessage">
+            <p className="maintext">Development Team</p>
+            <p className="subtext">for web pages and applications</p>
+          </div>
+          <div className="contact-text">
+            componentedecorreo1 componentedecorreo2
+          </div>
+        </div>
+        <Amoguss />
+      </section>
+    </>
+*/
+
+.mainlandin-section {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 65px;
+  height: 100vh;
+  align-items: center;
+
+  & .landingtexts {
+    display: flex;
+    flex-direction: column;
+    gap: 23vh;
+    padding-top: 70px;
+
+    & .welcomemessage {
+      & .maintext {
+        font-size: 80px;
+
+        &::first-letter {
+          color: var(--primary-color);
+        }
+
+        & span {
+          color: var(--secondary-color);
+        }
+      }
+      & .subtext {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.fade-inlanding {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 1s ease-out,
+    transform 1s ease-out;
+}
+
+.fade-inlanding.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

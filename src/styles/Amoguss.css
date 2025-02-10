@@ -1,0 +1,8 @@
+.amoguss-container {
+  height: fit-content;
+
+  img {
+    height: 500px;
+    -webkit-user-drag: none;
+  }
+}
