@@ -22,20 +22,12 @@
   }
 
   &::before {
-    background: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0),
-      black
-    );
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), black);
     left: 0;
   }
 
   &::after {
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0),
-      black
-    );
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), black);
     right: 0;
   }
 
@@ -46,13 +38,28 @@
     justify-content: start;
     align-items: center;
     height: 80px;
-    gap: 80px;
-    width: calc(30 * 64px + 29 * 80px);
+    gap: 120px;
     height: 100%;
-    animation: slide 20s linear infinite;
+    animation: slide 15s linear infinite;
 
     &:hover {
       animation-play-state: paused;
+    }
+
+    .carousel-card {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        transform: scale(3.1);
+      }
     }
   }
 }
@@ -62,7 +69,7 @@
     left: 0;
   }
   100% {
-    left: calc(-4240px/2);
+    left: calc(-100%);
   }
 }
 
