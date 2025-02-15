@@ -1,24 +1,22 @@
 import '../styles/Carousel.css'
 
 export const Carousel = ({ images = [] }) => {
-
   return (
     <div className="carousel-container">
-      <div className="carousel-track"
-        style={{
-          width: `${images.length * 2 * 64 + (120*(images.length-1))}px`
-        }}
-      >
+      <div className="carousel-track">
         {images.map((Image, index) => (
-        <div className="carousel-card"
-        >
-          <Image key={`original-${index}`} width='64px' height='64px'/>
-        </div>
+          <div key={`original-${index}`} className="carousel-card">
+            <Image width="64px" height="64px" />
+            <p className="text">Hola mundo</p>
+          </div>
         ))}
+      </div>
+      <div className="carousel-track">
         {images.map((Image, index) => (
-        <div className="carousel-card">
-          <Image key={`duplicado-${index}`} width='64px' height='64px'/>
-        </div>
+          <div key={`dupe-${index}`} className="carousel-card">
+            <Image width="64px" height="64px" />
+            <p className="text">Hola mundo</p>
+          </div>
         ))}
       </div>
     </div>
