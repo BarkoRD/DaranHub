@@ -3,18 +3,20 @@
   align-items: center;
   justify-content: space-between;
   padding-inline: 65px;
-  padding-block: 25px;
+  padding-block: 50px;
   user-select: none;
   width: 100vw;
   top: 0px;
   position: fixed;
   z-index: 50;
   background-color: black;
+  animation: adjust-header linear both;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 
   .header-element {
     font-weight: bold;
     transition: all 0.1s ease;
-    padding: 5px;
+    /* padding: 5px; */
     cursor: progress;
 
     &:hover {
@@ -22,4 +24,21 @@
       transform: scale(1.2);
     }
   }
+}
+
+.header-container,
+.header-element {
+  animation-timeline: scroll();
+  animation-range: 0 150px;
+}
+
+@keyframes adjust-header {
+  to {
+    padding-inline: 165px;
+    padding-block: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
+}
+@keyframes adjust-elemnent {
 }

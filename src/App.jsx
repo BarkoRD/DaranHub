@@ -12,7 +12,6 @@ import { CAROUSEL_IMAGES } from './constants'
 function App() {
   return (
     <>
-      <Header />
       <Entry />
       <MainLanding />
       <AboutUs />
