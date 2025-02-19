@@ -5,25 +5,9 @@ import { Carousel } from './components/Carousel'
 import { Entry } from './components/Entry'
 import MainLanding from './components/MainLanding'
 
-import {
-  C,
-  CSSNew,
-  Nodejs,
-  NestJS,
-  MySQL,
-  PostgreSQL,
-  MongoDB,
-  Python,
-  Docker,
-  JWT,
-  Git,
-  Github,
-  Linux,
-  Firebase,
-  TypeScript,
-} from './components/Icons'
 import AboutUs from './components/AboutUs'
 import FormSection from './components/FormSection'
+import { CAROUSEL_IMAGES } from './constants'
 
 function App() {
   return (
@@ -32,25 +16,7 @@ function App() {
       <Entry />
       <MainLanding />
       <AboutUs />
-      <Carousel
-        images={[
-          C,
-          CSSNew,
-          Nodejs,
-          NestJS,
-          MySQL,
-          PostgreSQL,
-          MongoDB,
-          Python,
-          Docker,
-          JWT,
-          Git,
-          Github,
-          Linux,
-          Firebase,
-          TypeScript,
-        ]}
-      />
+      <Carousel images={CAROUSEL_IMAGES} />
       <FormSection />
     </>
   )

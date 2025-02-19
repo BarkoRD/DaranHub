@@ -25,7 +25,7 @@
 
 .formsection-container {
   padding-inline: 65px;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   padding-block: 15px;
   font-size: 25px;
