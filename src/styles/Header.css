@@ -16,7 +16,6 @@
   .header-element {
     font-weight: bold;
     transition: all 0.1s ease;
-    /* padding: 5px; */
     cursor: progress;
 
     &:hover {
@@ -29,7 +28,7 @@
 .header-container,
 .header-element {
   animation-timeline: scroll();
-  animation-range: 0 150px;
+  animation-range: 0 300px;
 }
 
 @keyframes adjust-header {

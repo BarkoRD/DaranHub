@@ -16,7 +16,7 @@ import {
   TypeScript,
 } from './components/Icons'
 
-export const CAROUSEL_IMAGES = [
+export const Skills = [
   {
     Icon: C,
     name: 'C#',

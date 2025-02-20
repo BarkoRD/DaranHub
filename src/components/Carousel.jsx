@@ -1,8 +1,8 @@
 import '../styles/Carousel.css'
 
-export const Carousel = ({ images = [] }) => {
+export const Carousel = ({ images = [], onOpen }) => {
   return (
-    <div className="carousel-container">
+    <div className="carousel-container" data-blendy-from="skills" onClick={onOpen}>
       <div className="carousel-track">
         {images.map(({ Icon, name, color = 'white' }) => (
           <div key={`original-${name}`} className="carousel-card">
