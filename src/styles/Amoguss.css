@@ -1,5 +1,6 @@
 .amoguss-container {
   height: fit-content;
+  user-select: none;
 
   img {
     height: 500px;

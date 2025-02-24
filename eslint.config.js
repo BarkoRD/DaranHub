@@ -39,7 +39,7 @@ export default [
       'semi': ['error', 'never'],
       'quotes': ['error', 'single'],
       'indent': ['error', 2],
-      'no-unused-vars': 'error',
+      'no-unused-vars': 'off',
       'space-before-function-paren': 'off',
       'keyword-spacing': ['error', { before: true, after: true }],
       'object-curly-spacing': ['error', 'always'],

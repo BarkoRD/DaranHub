@@ -18,7 +18,7 @@ export default function MainLanding() {
           entry.target.classList.remove('visible')
         }
       },
-      { threshold: 0.1 },
+      { threshold: 0.5 }
     )
     if (ref1.current) observer.observe(ref1.current)
     return () => observer.disconnect()
@@ -31,7 +31,7 @@ export default function MainLanding() {
         <div className="landingtexts">
           <div className="welcomemessage">
             <p className="maintext">
-              Development <span>T</span>eam
+              <span>D</span>evelopment <span>T</span>eam
             </p>
             <p className="subtext">for web pages and applications</p>
           </div>

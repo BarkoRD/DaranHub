@@ -1,8 +1,15 @@
-.projects-pin {
+/* .projects-pin {
+  --rojo-leve: rgba(227, 27, 77, 0.3);
+  --azul-leve: #00858a;
+  --azul-leve: #37ab4e;
+  
   display: flex;
   background: var(--text-color);
   color: var(--bg-color);
   overflow: scroll;
+  margin-bottom: 100px;
+  box-shadow: 0 0px 30px 30px var(--rojo-leve);
+  animation: palpitateShadow 2s linear infinite alternate;
 
   height: 250vh;
   overflow: visible;
@@ -16,7 +23,6 @@
     overflow-x: hidden;
     top: 0;
 
-
     .projects-wrap {
       display: flex;
       justify-content: flex-start;
@@ -24,16 +30,15 @@
       padding: 50px 25vw;
       height: 100vh;
       width: 250vmax;
-      gap: 25vw;
+      gap: 10vw;
 
       background: rgb(227, 27, 77);
       background: linear-gradient(
         0deg,
-        rgba(227, 27, 77, 0.3) 0%,
+        var(--rojo-leve) 0%,
         rgba(0, 0, 0, 0.7) 50%,
-        rgba(227, 27, 77, 0.3) 100%
+        var(--rojo-leve) 100%
       );
-  
 
       will-change: transform;
       animation: linear move forwards;
@@ -41,28 +46,56 @@
       animation-range: contain 0% contain 100%;
     }
   }
+} */
+
+.projects-slider {
+  --rojo-leve: rgba(227, 27, 77, 0.3);
+  --azul-leve: #00858a;
+  --azul-leve: #37ab4e;
+
+  height: 100vh;
+  margin-block: 100px;
+  display: flex;
+  background: rgb(227, 27, 77);
+  background: linear-gradient(
+    0deg,
+    var(--rojo-leve) 0%,
+    rgba(0, 0, 0, 0.7) 50%,
+    var(--rojo-leve) 100%
+  );
+  box-shadow: 0 0px 30px 30px var(--rojo-leve);
+  animation: palpitateShadow 2s linear infinite alternate;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding-block: 100px;
+    position: relative;
+    user-select: none;
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background: var(--primary-color);
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--primary-color);
+  }
 }
 
 @keyframes move {
   to {
-    /* Move horizontally so that right edge is aligned against the viewport */
     transform: translateX(calc(-100% + 100vw));
   }
 }
 
-/* .projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-height: 100vh;
-  background: rgb(227, 27, 77);
-  background: linear-gradient(
-    0deg,
-    rgba(227, 27, 77, 0.3) 0%,
-    rgba(0, 0, 0, 0.7) 50%,
-    rgba(227, 27, 77, 0.3) 100%
-  );
-  border-top: 2px solid var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-} */
+@keyframes palpitateShadow {
+  to {
+    box-shadow: 0 -2px 30px 30px var(--rojo-leve);
+  }
+}

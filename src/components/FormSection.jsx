@@ -18,7 +18,7 @@ export default function FormSection() {
           entry.target.classList.remove('visible')
         }
       },
-      { threshold: 0.2 },
+      { threshold: 0.2 }
     )
     if (ref1.current) observer.observe(ref1.current)
     return () => observer.disconnect()

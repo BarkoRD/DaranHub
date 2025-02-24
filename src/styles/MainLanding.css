@@ -1,20 +1,3 @@
-/*  <>
-      <Header />
-      <section className="mainlandin-section">
-        <div className="landingtexts">
-          <div className="welcomemessage">
-            <p className="maintext">Development Team</p>
-            <p className="subtext">for web pages and applications</p>
-          </div>
-          <div className="contact-text">
-            componentedecorreo1 componentedecorreo2
-          </div>
-        </div>
-        <Amoguss />
-      </section>
-    </>
-*/
-
 .mainlandin-section {
   display: flex;
   justify-content: space-between;
@@ -30,12 +13,12 @@
     padding-top: 70px;
 
     & .welcomemessage {
+      & span:first-of-type {
+        color: var(--primary-color) !important;
+      }
+
       & .maintext {
         font-size: 80px;
-
-        &::first-letter {
-          color: var(--primary-color);
-        }
 
         & span {
           color: var(--secondary-color);
