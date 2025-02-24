@@ -13,83 +13,84 @@ import {
   Github,
   Linux,
   Firebase,
-  TypeScript,
+  TypeScript
 } from './components/Icons'
 
 export const Skills = [
   {
+    Icon: Github,
+    name: 'Github',
+    color: '#fff'
+  },
+  {
     Icon: C,
     name: 'C#',
-    color: '#a179dc',
+    color: '#a179dc'
   },
   {
     Icon: CSSNew,
     name: 'CSS',
-    color: '#639',
+    color: '#639'
   },
   {
     Icon: Nodejs,
     name: 'Node.js',
-    color: '#3c873a',
+    color: '#3c873a'
   },
   {
     Icon: NestJS,
     name: 'NestJS',
-    color: '#E0234E',
+    color: '#E0234E'
   },
   {
     Icon: MySQL,
     name: 'MySQL',
-    color: '#00758F',
+    color: '#00758F'
   },
   {
     Icon: PostgreSQL,
     name: 'PostgreSQL',
-    color: '#336791',
+    color: '#336791'
   },
   {
     Icon: MongoDB,
     name: 'MongoDB',
-    color: '#47A248',
+    color: '#47A248'
   },
   {
     Icon: Python,
     name: 'Python',
-    color: '#306998',
+    color: '#306998'
   },
   {
     Icon: Docker,
     name: 'Docker',
-    color: '#0db7ed',
+    color: '#0db7ed'
   },
   {
     Icon: JWT,
     name: 'JSON Web Token',
-    color: '#fff',
+    color: '#fff'
   },
   {
     Icon: Git,
     name: 'Git',
-    color: '#f34f29',
+    color: '#f34f29'
   },
-  {
-    Icon: Github,
-    name: 'Github',
-    color: '#fff',
-  },
+
   {
     Icon: Linux,
     name: 'Linux',
-    color: '#fff',
+    color: '#fff'
   },
   {
     Icon: Firebase,
     name: 'Firebase',
-    color: '#FFCA28',
+    color: '#FFCA28'
   },
   {
     Icon: TypeScript,
     name: 'TypeScript',
-    color: '#007ACC',
-  },
+    color: '#007ACC'
+  }
 ]

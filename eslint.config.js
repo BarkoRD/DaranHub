@@ -15,17 +15,16 @@ export default [
       parserOptions: {
         ecmaVersion: 'latest',
         ecmaFeatures: { jsx: true },
-        sourceType: 'module',
-      },
+        sourceType: 'module'
+      }
     },
     settings: { react: { version: '18.3' } },
     plugins: {
       react,
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
-      prettier,
+      prettier
     },
-    extends: ['plugin:prettier/recommended'],
     rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
@@ -34,21 +33,21 @@ export default [
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': [
         'warn',
-        { allowConstantExport: true },
+        { allowConstantExport: true }
       ],
-      'semi': ['error', 'never'], // No usar punto y coma
-      'quotes': ['error', 'single'], // Usar comillas simples
-      'indent': ['error', 2], // Indentación de 2 espacios
-      'no-unused-vars': 'warn', // Advertir sobre variables no usadas
-      'no-console': 'warn', // Advertir sobre el uso de console.log
-      'space-before-function-paren': ['error', 'always'], // Espacio antes de los paréntesis de función
-      'keyword-spacing': ['error', { before: true, after: true }], // Espacio antes y después de palabras clave
-      'object-curly-spacing': ['error', 'always'], // Espacio dentro de llaves
-      'array-bracket-spacing': ['error', 'never'], // Sin espacio dentro de corchetes
-      'no-multiple-empty-lines': ['error', { max: 1 }], // Máximo una línea vacía
-      'eol-last': ['error', 'always'], // Nueva línea al final del archivo
-      'no-trailing-spaces': 'error', // Sin espacios al final de las líneas
-      'eqeqeq': ['error', 'always'], // Usar siempre === y !==
-    },
-  },
+      'react/prop-types': 'off',
+      'semi': ['error', 'never'],
+      'quotes': ['error', 'single'],
+      'indent': ['error', 2],
+      'no-unused-vars': 'error',
+      'space-before-function-paren': 'off',
+      'keyword-spacing': ['error', { before: true, after: true }],
+      'object-curly-spacing': ['error', 'always'],
+      'array-bracket-spacing': ['error', 'never'],
+      'no-multiple-empty-lines': ['error', { max: 1 }],
+      'eol-last': ['error', 'always'],
+      'no-trailing-spaces': 'error',
+      'eqeqeq': ['error', 'always'],
+    }
+  }
 ]

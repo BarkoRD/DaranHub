@@ -1,4 +1,5 @@
 {
+  "trailingComma": "none",
   "semi": false,
   "singleQuote": true,
   "tabWidth": 2,
@@ -11,7 +12,9 @@
   "overrides": [
     {
       "files": "*.json",
-      "options": { "tabWidth": 2 }
+      "options": {
+        "tabWidth": 2
+      }
     }
   ]
 }

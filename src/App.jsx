@@ -1,6 +1,5 @@
 import './styles/App.css'
 
-import { Carousel } from './components/Carousel'
 import { Entry } from './components/Entry'
 import MainLanding from './components/MainLanding'
 
@@ -10,6 +9,7 @@ import FormSection from './components/FormSection'
 
 import { ReactLenis } from 'lenis/react' // Libreria para hacer scroll suave
 import { SkillsSection } from './components/SkillsSection'
+import { ProjectSection } from './components/ProjectSection'
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
       <ReactLenis root>
         <Entry />
         <MainLanding />
+        <ProjectSection />
         <AboutUs />
-        {/* <Carousel images={Skills} /> */}
         <SkillsSection />
         <FormSection />
       </ReactLenis>

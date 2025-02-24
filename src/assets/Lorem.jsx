@@ -33,14 +33,15 @@ export default function Lorem() {
     <>
       <p ref={ref1} className="fade-inabout">
         Hi, <span className="primarycolor">D</span>aran{' '}
-        <span className="secondarycolor">H</span>ub nació en <b>2021</b> con
-        una visión clara: ayudar a otros a construir soluciones tecnológicas. Al
+        <span className="secondarycolor">H</span>ub nació en <b>2021</b> con una
+        visión clara: ayudar a otros a construir soluciones tecnológicas. Al
         principio, éramos un pequeño grupo de amigos,{' '}
         <span className="primarycolor">Adolfo Rosa</span> y{' '}
         <span className="secondarycolor">Ricardo Rivera</span>, quienes se
         conocían y trabajaban como <b>freelancers</b>. En esos primeros días,
         nos enfocamos en <b>proyectos</b> pequeños pero significativos,
-        principalmente ayudando a empresas con <b>APIs</b> y tareas de <b>backend</b>.
+        principalmente ayudando a empresas con <b>APIs</b> y tareas de{' '}
+        <b>backend</b>.
       </p>
       <br />
       <p ref={ref2} className="fade-inabout">

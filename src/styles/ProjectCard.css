@@ -1,0 +1,58 @@
+.project-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .project-card__header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    img {
+      aspect-ratio: 1/1;
+      width: calc(1.5rem + 1rem + 20px);
+      border-radius: 10px;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      white-space: nowrap;
+
+      svg {
+        margin-left: 1rem;
+      }
+    }
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--text-secondary);
+    }
+  }
+
+  .project-card__body {
+    img {
+      width: 100%;
+    }
+
+    .project-card__body-info {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      p {
+        text-wrap: balance;
+      }
+
+      .project-card__body-skills {
+        display: flex;
+        gap: 1rem;
+
+        svg {
+          color: var(--text-secondary);
+        }
+      }
+    }
+  }
+}
