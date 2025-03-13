@@ -19,6 +19,7 @@ body {
 :root {
   --primary-color: #62d5d6;
   --secondary-color: #e31b4d;
+  --text-carousel-color: #e31b4d5b;
 }
 
 *::selection {

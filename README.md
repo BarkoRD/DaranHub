@@ -1,9 +1,11 @@
-detalles importantes para que el portafolio valga mucho mas
-hacer que todo elemento no visible desaparezca
+darle cariño al form de contact:
+hacer que se encaje en la pantalla completamente, 
+hacer esta linea divisora y poner el carusel ahi ejemplo: https://prnt.sc/TRPWzTVJrIpf,
+inspiracion base pal contact https://prnt.sc/JKOLW-VCNGi0.
 
-el amongus se vaya moviendo para siempre estar en el viewport del usuario y que no se repita en ningun momento
+darle MAS cariño al projects:
+los puntos del slider de projects que sean mas grandes, los puntos no seleccionados que sean secondary color pero un poco mas oscuro que el secondary color incluso, las felchas de derecha e izquierda... bueh bucando impiracion toi pa eso.
 
-simplemente se devanecera y aparecera en otro lugar 
-al hacer hover auna tecnologia se hace scale 1.1 y el nombre de dicha tecnologia
+la pagina debe tener un selector de idioma o un swich de idioma por decirlo asi.
 
-efecto de frenado con un hover y bajando la velocidad al carrusel
+landing section: añadir botones de llamada a la accion creo xd.

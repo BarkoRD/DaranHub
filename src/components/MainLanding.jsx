@@ -26,7 +26,6 @@ export default function MainLanding() {
 
   return (
     <>
-      <Header />
       <section ref={ref1} className="mainlandin-section fade-inlanding">
         <div className="landingtexts">
           <div className="welcomemessage">

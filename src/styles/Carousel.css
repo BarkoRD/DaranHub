@@ -5,6 +5,7 @@
   gap: 8rem;
   position: relative;
   overflow-x: hidden;
+  margin-top: 70px;
 
   .carousel-track {
     display: flex;

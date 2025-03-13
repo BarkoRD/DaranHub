@@ -13,7 +13,10 @@ import {
   Github,
   Linux,
   Firebase,
-  TypeScript
+  Expressjs,
+  React,
+  TypeScript,
+  Vite
 } from './components/Icons'
 
 export const Skills = [
@@ -92,5 +95,35 @@ export const Skills = [
     Icon: TypeScript,
     name: 'TypeScript',
     color: '#007ACC'
+  }
+]
+
+export const projects = [
+  {
+    logo: '/darangetLogo.png',
+    image: '/daranget.png',
+    title: 'DaranGET',
+    date: '02/2024 - actualidad',
+    description:
+      'DaranGET gets the video and audio of your link and allows you to download it easily',
+    skills: [Vite, Expressjs, React, Nodejs]
+  },
+  {
+    logo: '/darangetLogo.png',
+    image: '/daranget.png',
+    title: 'DaranGET2',
+    date: '02/2024 - actualidad',
+    description:
+      'DaranGET gets the video and audio of your link and allows you to download it easily',
+    skills: [Vite, Expressjs, React, Nodejs]
+  },
+  {
+    logo: '/darangetLogo.png',
+    image: '/daranget.png',
+    title: 'DaranGET3',
+    date: '02/2024 - actualidad',
+    description:
+      'DaranGET gets the video and audio of your link and allows you to download it easily',
+    skills: [Vite, Expressjs, React, Nodejs]
   }
 ]
