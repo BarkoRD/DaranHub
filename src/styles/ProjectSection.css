@@ -2,37 +2,44 @@
   position: relative;
   height: 100vh;
   margin-bottom: 100px;
-
-  --rojo-leve: rgba(227, 27, 77, 0.3);
+  display: flex;
+  align-items: center;
+  
+  --rojo-leve: #e31b4d4d;
   --azul-leve: #00858a;
   --azul-leve: #37ab4e;
 
-  background: rgb(227, 27, 77);
+  /* background: #e31b4d; */
   background: linear-gradient(
     0deg,
     var(--bgc, white) 0%,
     rgba(0, 0, 0, 0.7) 50%,
     var(--bgc, white) 100%
   );
-  transition: background 0.5s ease-in-out;
-  box-shadow: 0 0px 30px 30px var(--rojo-leve);
+  box-shadow: 0 0px 30px 30px var(--bgc);
   animation: palpitateShadow 2s linear infinite alternate;
 }
 
 .projects-slider {
   --swiper-pagination-bullet-size: 16px;
-  --swiper-pagination-color: var(--primary-color);
-  --swiper-pagination-bullet-inactive-color: var(--primary-color);
+  --swiper-pagination-bullet-horizontal-gap: 10px;
 
+  /* height: 100%; */
   display: flex;
+  gap: 30px;
+  flex-direction: column;
 
   .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 100px;
+    /* padding-block: 100px; */
     position: relative;
     user-select: none;
+  }
+
+  .swiper-pagination{
+    position: static;
   }
 
   .swiper-button-prev,
@@ -49,6 +56,6 @@
 
 @keyframes palpitateShadow {
   to {
-    box-shadow: 0 -2px 30px 30px var(--rojo-leve);
+    box-shadow: 0 -2px 30px 30px var(--bgc);
   }
 }

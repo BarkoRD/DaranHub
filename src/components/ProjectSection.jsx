@@ -57,9 +57,15 @@ export const ProjectSection = () => {
         rewind={true}
         modules={[Pagination, Autoplay]}
         onSlideChange={(s) => {
-          document
-            .getElementById('projects')
-            .style.setProperty('--bgc', projects[s.realIndex].bgc)
+          const { bgc, dotBgc } = projects[s.realIndex]
+          const ps = document.getElementById('projects')
+          ps.style.setProperty('--bgc', bgc)
+          ps.style.setProperty('--swiper-pagination-color', dotBgc)
+          ps.style.setProperty('swiper-pagination-bullet-inactive-color', dotBgc)
+          ps.style.setProperty(
+            '--text-carousel-color',
+            bgc
+          )
         }}
         className="projects-slider"
       >

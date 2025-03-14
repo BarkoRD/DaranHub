@@ -14,7 +14,7 @@ import { ProjectSection } from './components/ProjectSection'
 function App() {
   return (
     <>
-      <ReactLenis root>
+      {/* <ReactLenis root> */}
         <Entry />
         <Header />
         <MainLanding />
@@ -22,7 +22,7 @@ function App() {
         <AboutUs />
         <FormSection />
         <SkillsSection />
-      </ReactLenis>
+      {/* </ReactLenis> */}
     </>
   )
 }

@@ -8,7 +8,7 @@
 }
 
 .text-carousel-item {
-  font-size: 25rem;
+  font-size: 30rem;
   font-family: 'Koulen', serif;
   color: transparent;
   -webkit-text-stroke: 3px var(--text-carousel-color);

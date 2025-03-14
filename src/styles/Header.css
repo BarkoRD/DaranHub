@@ -13,11 +13,12 @@
   animation: adjust-header linear both;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
 
-  .header-element {
+  .header-element, a {
     font-weight: bold;
     transition: all 0.1s ease;
-    cursor: progress;
-
+    color: white;
+    text-decoration: none;
+    
     &:hover {
       color: var(--primary-color);
       transform: scale(1.2);
@@ -34,7 +35,7 @@
 @keyframes adjust-header {
   to {
     padding-inline: 165px;
-    padding-block: 15px;
+    padding-block: 10px;
     background-color: transparent;
     backdrop-filter: blur(10px);
   }

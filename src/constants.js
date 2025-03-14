@@ -107,17 +107,19 @@ export const projects = [
     description:
       'DaranGET gets the video and audio of your link and allows you to download it easily',
     skills: [Vite, Expressjs, React, Nodejs],
-    bgc: 'red'
+    bgc: '#e31b4d4d',
+    dotBgc: '#e31b4d'
   },
   {
     logo: '/darangetLogo.png',
     image: '/daranget.png',
-    title: 'DaranGET2',
+    title: 'Quoridor',
     date: '02/2024 - actualidad',
     description:
-      'DaranGET gets the video and audio of your link and allows you to download it easily',
+      'Play Quoridor online, block opponents, and reach the goal first. Simple, strategic, and fun!',
     skills: [Vite, Expressjs, React, Nodejs],
-    bgc: 'green'
+    bgc: '#1be34d4d',
+    dotBgc: '#1be34d'
   },
   {
     logo: '/darangetLogo.png',
@@ -127,6 +129,7 @@ export const projects = [
     description:
       'DaranGET gets the video and audio of your link and allows you to download it easily',
     skills: [Vite, Expressjs, React, Nodejs],
-    bgc: 'blue'
+    bgc: '#1b74e34d',
+    dotBgc: '#1b74e3'
   }
 ]
