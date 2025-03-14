@@ -1,47 +1,38 @@
-html,
-body {
-  scroll-snap-type: y proximity;
-  scroll-behavior: smooth;
-}
-
 .projects-section {
   position: relative;
   height: 100vh;
   margin-bottom: 100px;
-  scroll-snap-align: start;
-}
 
-.projects-slider {
   --rojo-leve: rgba(227, 27, 77, 0.3);
   --azul-leve: #00858a;
   --azul-leve: #37ab4e;
 
-  /* margin-block: 100px; */
-  display: flex;
   background: rgb(227, 27, 77);
   background: linear-gradient(
     0deg,
-    var(--rojo-leve) 0%,
+    var(--bgc, white) 0%,
     rgba(0, 0, 0, 0.7) 50%,
-    var(--rojo-leve) 100%
+    var(--bgc, white) 100%
   );
+  transition: background 0.5s ease-in-out;
   box-shadow: 0 0px 30px 30px var(--rojo-leve);
   animation: palpitateShadow 2s linear infinite alternate;
+}
+
+.projects-slider {
+  --swiper-pagination-bullet-size: 16px;
+  --swiper-pagination-color: var(--primary-color);
+  --swiper-pagination-bullet-inactive-color: var(--primary-color);
+
+  display: flex;
 
   .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     padding-block: 100px;
     position: relative;
     user-select: none;
-  }
-
-  .swiper-pagination {
-    .swiper-pagination-bullet {
-      background: var(--primary-color);
-    }
   }
 
   .swiper-button-prev,

@@ -5,7 +5,8 @@ import '../styles/Header.css'
 export default function Header() {
   return (
     <div className="header-container">
-      <p className="header-element">Proyectos</p>
+      {/* <p className="header-element">Proyectos</p> */}
+      <a href="#projects">Proyectos</a>
       <p className="header-element">Contratanos</p>
       <div className="header-logo">
         <Logo size="3rem" />

@@ -106,7 +106,8 @@ export const projects = [
     date: '02/2024 - actualidad',
     description:
       'DaranGET gets the video and audio of your link and allows you to download it easily',
-    skills: [Vite, Expressjs, React, Nodejs]
+    skills: [Vite, Expressjs, React, Nodejs],
+    bgc: 'red'
   },
   {
     logo: '/darangetLogo.png',
@@ -115,7 +116,8 @@ export const projects = [
     date: '02/2024 - actualidad',
     description:
       'DaranGET gets the video and audio of your link and allows you to download it easily',
-    skills: [Vite, Expressjs, React, Nodejs]
+    skills: [Vite, Expressjs, React, Nodejs],
+    bgc: 'green'
   },
   {
     logo: '/darangetLogo.png',
@@ -124,6 +126,7 @@ export const projects = [
     date: '02/2024 - actualidad',
     description:
       'DaranGET gets the video and audio of your link and allows you to download it easily',
-    skills: [Vite, Expressjs, React, Nodejs]
+    skills: [Vite, Expressjs, React, Nodejs],
+    bgc: 'blue'
   }
 ]
